@@ -74,11 +74,7 @@ public class WidgetService {
             xAxis.put(DATA, new JSONArray(labels));
 
             return jsonObject.toString();
-        } catch (JSONException e) {
-            LOGGER.log("context", e);
-            log.error("An exception occured when manipulating chart's json template. {}", e.getMessage());
-            return null;
-        }
+        } 
     }
 
     private String readResource() {
