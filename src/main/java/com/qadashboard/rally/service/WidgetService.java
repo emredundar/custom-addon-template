@@ -75,7 +75,7 @@ public class WidgetService {
 
             return jsonObject.toString();
         } catch (JSONException e) {
-            e.printStackTrace();
+            LOGGER.log("context", e);
             log.error("An exception occured when manipulating chart's json template. {}", e.getMessage());
             return null;
         }
