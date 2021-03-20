@@ -75,6 +75,7 @@ public class WidgetService {
 
             return jsonObject.toString();
         } catch (JSONException e) {
+            return null;
         }
     }
 
