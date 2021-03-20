@@ -74,7 +74,8 @@ public class WidgetService {
             xAxis.put(DATA, new JSONArray(labels));
 
             return jsonObject.toString();
-        } 
+        } catch (JSONException e) {
+        }
     }
 
     private String readResource() {
